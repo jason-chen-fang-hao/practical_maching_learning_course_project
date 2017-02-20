@@ -5,11 +5,8 @@
 <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>Classifying quality of exercise using monitor data</title>
-<style>
-<!--
-code{white-space: pre;}-->
-</style>
+
+
 </head>
 
 <body>
