@@ -16,9 +16,7 @@ code{white-space: pre;}-->
 
 
 
-
-<div id="classifying-quality-of-exercise-using-monitor-data-practical-machine-learning-course-project" class="section level1">
-<h1><img border="0" src="fig%201.png" width="1344" height="960">Coursera Practical Machine Learning Course Project</h1>
+<h1>Coursera Practical Machine Learning Course Project</h1>
 <p><b>Name: Jason</b></p>
 <p class="MsoListParagraph" style="text-indent: -18.0pt; line-height: normal; margin-left: 18.0pt">
 <b>
