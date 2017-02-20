@@ -1,0 +1,3008 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List
+href="Coursear-Practical%20Machine%20Learning%20Course%20Project%20WriteUp_Jason_files/filelist.xml">
+<link rel=Edit-Time-Data
+href="Coursear-Practical%20Machine%20Learning%20Course%20Project%20WriteUp_Jason_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Jason CHEN (CSCOLLEGE)</o:Author>
+  <o:LastAuthor>Jason CHEN (CSCOLLEGE)</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>13</o:TotalTime>
+  <o:LastPrinted>2017-02-20T07:44:00Z</o:LastPrinted>
+  <o:Created>2017-02-20T07:49:00Z</o:Created>
+  <o:LastSaved>2017-02-20T07:49:00Z</o:LastSaved>
+  <o:Pages>9</o:Pages>
+  <o:Words>2694</o:Words>
+  <o:Characters>15361</o:Characters>
+  <o:Lines>128</o:Lines>
+  <o:Paragraphs>36</o:Paragraphs>
+  <o:CharactersWithSpaces>18019</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=themeData
+href="Coursear-Practical%20Machine%20Learning%20Course%20Project%20WriteUp_Jason_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="Coursear-Practical%20Machine%20Learning%20Course%20Project%20WriteUp_Jason_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-SG</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520092929 1073786111 9 0 415 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+h2
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+h3
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-priority:99;
+	mso-style-link:"Header Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 225.65pt right 451.3pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-priority:99;
+	mso-style-link:"Footer Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 225.65pt right 451.3pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+code
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+pre
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-bidi-font-family:Tahoma;
+	mso-fareast-language:EN-US;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	mso-add-space:auto;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	mso-add-space:auto;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:24.0pt;
+	mso-bidi-font-size:24.0pt;
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:18.0pt;
+	mso-fareast-language:EN-SG;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:18.0pt;
+	mso-bidi-font-size:18.0pt;
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-fareast-language:EN-SG;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:13.5pt;
+	mso-bidi-font-size:13.5pt;
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-fareast-language:EN-SG;
+	font-weight:bold;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"HTML Preformatted";
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";
+	mso-fareast-language:EN-SG;}
+span.identifier
+	{mso-style-name:identifier;
+	mso-style-unhide:no;}
+span.paren
+	{mso-style-name:paren;
+	mso-style-unhide:no;}
+span.string
+	{mso-style-name:string;
+	mso-style-unhide:no;}
+span.operator
+	{mso-style-name:operator;
+	mso-style-unhide:no;}
+span.literal
+	{mso-style-name:literal;
+	mso-style-unhide:no;}
+span.keyword
+	{mso-style-name:keyword;
+	mso-style-unhide:no;}
+span.number
+	{mso-style-name:number;
+	mso-style-unhide:no;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Footer;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:10.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("Coursear-Practical%20Machine%20Learning%20Course%20Project%20WriteUp_Jason_files/header.htm") fs;
+	mso-footnote-continuation-separator:url("Coursear-Practical%20Machine%20Learning%20Course%20Project%20WriteUp_Jason_files/header.htm") fcs;
+	mso-endnote-separator:url("Coursear-Practical%20Machine%20Learning%20Course%20Project%20WriteUp_Jason_files/header.htm") es;
+	mso-endnote-continuation-separator:url("Coursear-Practical%20Machine%20Learning%20Course%20Project%20WriteUp_Jason_files/header.htm") ecs;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-footer:url("Coursear-Practical%20Machine%20Learning%20Course%20Project%20WriteUp_Jason_files/header.htm") f1;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:932544311;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1231129942 1208549393 1208549401 1208549403 1208549391 1208549401 1208549403 1208549391 1208549401 1208549403;}
+@list l0:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:54.0pt;
+	text-indent:-18.0pt;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:90.0pt;
+	text-indent:-9.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:126.0pt;
+	text-indent:-18.0pt;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:162.0pt;
+	text-indent:-18.0pt;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:198.0pt;
+	text-indent:-9.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:234.0pt;
+	text-indent:-18.0pt;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:270.0pt;
+	text-indent:-18.0pt;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:306.0pt;
+	text-indent:-9.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:10.0pt;
+	mso-para-margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-SG link=blue vlink=purple style='tab-interval:36.0pt'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;line-height:normal;mso-outline-level:1'><b><u><span
+style='font-size:18.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-font-kerning:18.0pt;mso-fareast-language:EN-SG'>Practical
+Machine Learning Course Project (Part of Data Science Specialization)<o:p></o:p></span></u></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:1'><b><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-font-kerning:18.0pt;mso-fareast-language:EN-SG'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:1'><b><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-font-kerning:18.0pt;mso-fareast-language:EN-SG'>Name: Jason Chen<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:1'><b><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-font-kerning:18.0pt;mso-fareast-language:EN-SG'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoListParagraph style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:18.0pt;mso-add-space:auto;text-indent:-18.0pt;line-height:
+normal;mso-outline-level:1;mso-list:l0 level1 lfo1'><![if !supportLists]><b><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-font-kerning:18.0pt;mso-fareast-language:EN-SG'><span
+style='mso-list:Ignore'>1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></b><![endif]><b><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";mso-font-kerning:
+18.0pt;mso-fareast-language:EN-SG'>Course Project Background:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:1'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-font-kerning:18.0pt;mso-fareast-language:EN-SG;mso-bidi-font-weight:bold'>Using
+devices such as Jawbone Up, Nike FuelBand, and Fitbit it is now possible to
+collect a large amount of data about personal activity relatively
+inexpensively. These type of devices are part of the quantified self movement –
+a group of enthusiasts who take measurements about themselves regularly to improve
+their health, to find patterns in their behavior, or because they are tech
+geeks. One thing that people regularly do is quantify how much of a particular
+activity they do, but they rarely quantify how well they do it. In this
+project, your goal will be to use data from accelerometers on the belt,
+forearm, arm, and dumbell of 6 participants. They were asked to perform barbell
+lifts correctly and incorrectly in 5 different ways. More information is
+available from the website here: http://groupware.les.inf.puc-rio.br/har (see
+the section on the Weight Lifting Exercise Dataset).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:1'><b><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-font-kerning:18.0pt;mso-fareast-language:EN-SG'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:1'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-font-kerning:18.0pt;mso-fareast-language:EN-SG;mso-bidi-font-weight:bold'>The
+training data for this project are available here:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:1'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-font-kerning:18.0pt;mso-fareast-language:EN-SG;mso-bidi-font-weight:bold'>https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:1'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-font-kerning:18.0pt;mso-fareast-language:EN-SG;mso-bidi-font-weight:bold'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:1'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-font-kerning:18.0pt;mso-fareast-language:EN-SG;mso-bidi-font-weight:bold'>The
+test data are available here:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:1'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-font-kerning:18.0pt;mso-fareast-language:EN-SG;mso-bidi-font-weight:bold'>https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:1'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-font-kerning:18.0pt;mso-fareast-language:EN-SG;mso-bidi-font-weight:bold'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:1'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-font-kerning:18.0pt;mso-fareast-language:EN-SG;mso-bidi-font-weight:bold'>The
+data for this project come from this source:
+http://groupware.les.inf.puc-rio.br/har. If you use the document you create for
+this class for any purpose please cite them as they have been very generous in
+allowing their data to be used for this kind of assignment.<b><o:p></o:p></b></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:1'><b><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-font-kerning:18.0pt;mso-fareast-language:EN-SG'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:EN-SG'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:EN-SG'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:EN-SG'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:EN-SG'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoListParagraph style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:18.0pt;mso-add-space:auto;text-indent:-18.0pt;line-height:
+normal;mso-outline-level:1;mso-list:l0 level1 lfo1'><![if !supportLists]><b><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-font-kerning:18.0pt;mso-fareast-language:EN-SG'><span
+style='mso-list:Ignore'>2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></b><![endif]><b><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";mso-font-kerning:
+18.0pt;mso-fareast-language:EN-SG'>Project Goal:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:1'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>The goal of this project is to create a
+machine-learning algorithm that can correctly identify the quality of barbell
+bicep curls by using data from belt, forearm, arm, and dumbbell monitors. There
+are five classifications of this exercise, one method is the correct form of
+the exercise while the other four are common mistakes: exactly according to the
+specification (Class A), throwing the elbows to the front (Class B), lifting
+the dumbbell only halfway (Class C), lowering the dumbbell only halfway (Class
+D) and throwing the hips to the front (Class E).<b><span style='mso-font-kerning:
+18.0pt'><o:p></o:p></span></b></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><a
+href="http://groupware.les.inf.puc-rio.br/har#ixzz3PO5pnm1R"><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-fareast-language:EN-SG'>http://groupware.les.inf.puc-rio.br/har#ixzz3PO5pnm1R</span></a><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-fareast-language:EN-SG'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:2'><b><span style='font-size:18.0pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoListParagraph style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:18.0pt;mso-add-space:auto;text-indent:-18.0pt;line-height:
+normal;mso-outline-level:2;mso-list:l0 level1 lfo1'><![if !supportLists]><b><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-fareast-language:EN-SG'><span style='mso-list:Ignore'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b><![endif]><b><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-fareast-language:EN-SG'>Loading the Data<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:EN-SG'>The first
+step is to load the data.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'><span
+style='mso-spacerun:yes'> </span>setwd(&quot;~/Desktop&quot;)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>training&lt;-read.table(&quot;./pml-training.csv&quot;,
+header=TRUE, sep=&quot;,&quot;)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>testing&lt;-read.table(&quot;./pml-testing.csv&quot;,header=TRUE,
+sep=&quot;,&quot;)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:EN-SG'>And to
+install the packages that will be used: caret &amp; rattle.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>library(caret)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Warning: package 'caret' was built under R
+version 3.1.2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Loading required package: lattice<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Loading required package: ggplot2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>library(rattle)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Warning: package 'rattle' was built under R
+version 3.1.2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Rattle: A free graphical interface for data
+mining with R.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Version 3.4.1 Copyright (c) 2006-2014 Togaware
+Pty Ltd.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Type 'rattle()' to shake, rattle, and roll your
+data.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>library(gridExtra)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Loading required package: grid<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoListParagraph style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:18.0pt;mso-add-space:auto;text-indent:-18.0pt;line-height:
+normal;mso-outline-level:2;mso-list:l0 level1 lfo1'><![if !supportLists]><b><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-fareast-language:EN-SG'><span style='mso-list:Ignore'>4)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b><![endif]><b><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-fareast-language:EN-SG'>Cleaning the data sets<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:EN-SG'>The data
+provided has many variables with missing data as well as information that is
+not relevant to the question being analyzed. Relevant variables are extracted
+using pattern recognition for relevant strings, leaving 52 variables.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:3'><b><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>4.1) Cleaning up Training Data Set<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>trainingaccel&lt;-grepl(&quot;^accel&quot;,names(training))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>trainingtotal&lt;-grepl(&quot;^total&quot;,names(training))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>roll&lt;-grepl(&quot;^roll&quot;,names(training))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>pitch&lt;-grepl(&quot;^pitch&quot;,names(training))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>yaw&lt;-grepl(&quot;^yaw&quot;,names(training))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>magnet&lt;-grepl(&quot;^magnet&quot;,names(training))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>gyro&lt;-grepl(&quot;^gyro&quot;,names(training))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>acceldata&lt;-training[ ,trainingaccel]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>rolldata&lt;-training[ ,roll]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>pitchdata&lt;-training[ ,pitch]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>yawdata&lt;-training[,yaw]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>magnetdata&lt;-training[,magnet]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>gyrodata&lt;-training[,gyro]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>totaldata&lt;-training[,trainingtotal]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>trainClasse&lt;-cbind(acceldata,rolldata,pitchdata,yawdata,magnetdata,gyrodata,totaldata,training[
+,160])<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>colnames(trainClasse)[53]&lt;-'Classe'<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:3'><b><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>4.2) Cleaning up Testing Data Set<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>testingaccel&lt;-grepl(&quot;^accel&quot;,names(testing))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>testingtotal&lt;-grepl(&quot;^total&quot;,names(testing))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>troll&lt;-grepl(&quot;^roll&quot;,names(testing))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>tpitch&lt;-grepl(&quot;^pitch&quot;,names(testing))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>tyaw&lt;-grepl(&quot;^yaw&quot;,names(testing))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>tmagnet&lt;-grepl(&quot;^magnet&quot;,names(testing))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>tgyro&lt;-grepl(&quot;^gyro&quot;,names(testing))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>tacceldata&lt;-testing[ ,testingaccel]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>trolldata&lt;-testing[ ,troll]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>tpitchdata&lt;-testing[,tpitch]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>tyawdata&lt;-testing[,tyaw]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>tmagnetdata&lt;-testing[,tmagnet]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>tgyrodata&lt;-testing[,tgyro]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>ttotaldata&lt;-testing[,testingtotal]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>testClasse&lt;-cbind(tacceldata,trolldata,tpitchdata,tyawdata,tmagnetdata,tgyrodata,ttotaldata,testing[
+,160])<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>colnames(testClasse)[53]&lt;-'problem.id'<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:2'><b><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>4.3) Making Training &amp; Testing Subset<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:EN-SG'>There are
+19,622 observations in the training set, so in order to reduce time and to be
+able to perform cross-validation, a training subset is created with 60% of the
+original training data set to be used for training and the remaining 40% to be
+used as the testing set (before final testing is performed).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>set.seed(400)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>inTrain = createDataPartition(trainClasse$Classe, p
+= .60)[[1]]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>trainingsubset = trainClasse[ inTrain,]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>testingsubset = trainClasse[-inTrain,]<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:18.0pt;mso-add-space:auto;text-indent:-18.0pt;line-height:
+normal;mso-outline-level:1;mso-list:l0 level1 lfo1'><![if !supportLists]><b><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-font-kerning:18.0pt;mso-fareast-language:EN-SG'><span
+style='mso-list:Ignore'>5)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></b><![endif]><b><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";mso-font-kerning:
+18.0pt;mso-fareast-language:EN-SG'>rpart Model<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:EN-SG'>As the
+outcomes are categorical (nominal), a decision tree was the first model tested
+using the method rpart.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>set.seed(400)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>modFit&lt;-train(Classe~.,method=&quot;rpart&quot;,
+data=trainingsubset)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Loading required package: rpart<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>print(modFit$finalModel)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## n= 11776 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## node), split, n, loss, yval, (yprob)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>       </span>*
+denotes terminal node<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>   </span>1) root
+11776 8428 A (0.28 0.19 0.17 0.16 0.18)<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>     </span>2)
+roll_belt&lt; 130.5 10776 7437 A (0.31 0.21 0.19 0.18 0.11)<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>       </span>4)
+pitch_forearm&lt; -33.95 944<span style='mso-spacerun:yes'>    </span>5 A (0.99
+0.0053 0 0 0) *<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>       </span>5)
+pitch_forearm&gt;=-33.95 9832 7432 A (0.24 0.23 0.21 0.2 0.12)<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>        </span>10)
+yaw_belt&gt;=169.5 507<span style='mso-spacerun:yes'>   </span>55 A (0.89 0.049
+0 0.053 0.0059) *<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>        </span>11)
+yaw_belt&lt; 169.5 9325 7076 B (0.21 0.24 0.22 0.2 0.13)<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>         
+</span>22) magnet_dumbbell_z&lt; -88.5 1218<span style='mso-spacerun:yes'> 
+</span>519 A (0.57 0.28 0.047 0.072 0.026) *<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>         
+</span>23) magnet_dumbbell_z&gt;=-88.5 8107 6110 C (0.15 0.24 0.25 0.22
+0.14)<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>           
+</span>46) pitch_belt&lt; -42.95 496<span style='mso-spacerun:yes'>   </span>83
+B (0.014 0.83 0.1 0.022 0.028) *<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>           
+</span>47) pitch_belt&gt;=-42.95 7611 5665 C (0.16 0.2 0.26 0.24 0.15)<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>             
+</span>94) magnet_dumbbell_x&gt;=-446.5 3261 2281 B (0.17 0.3 0.094 0.24
+0.2)<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>              
+</span>188) roll_belt&lt; 117.5 2049 1175 B (0.17 0.43 0.024 0.13 0.25) *<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>              
+</span>189) roll_belt&gt;=117.5 1212<span style='mso-spacerun:yes'>  </span>699
+D (0.17 0.087 0.21 0.42 0.11) *<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>             
+</span>95) magnet_dumbbell_x&lt; -446.5 4350 2710 C (0.16 0.12 0.38 0.23 0.11)
+*<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>     </span>3)
+roll_belt&gt;=130.5 1000<span style='mso-spacerun:yes'>    </span>9 E (0.009 0
+0 0 0.99) *<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>fancyRpartPlot(modFit$finalModel,cex=.5,under.cex=1,shadow.offset=0)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><!--[if gte vml 1]><v:shapetype id="_x0000_t202"
+ coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+ <v:stroke joinstyle="miter"/>
+ <v:path gradientshapeok="t" o:connecttype="rect"/>
+</v:shapetype><v:shape id="Text_x0020_Box_x0020_2" o:spid="_x0000_s1026"
+ type="#_x0000_t202" style='position:absolute;margin-left:139.95pt;
+ margin-top:316.05pt;width:189.85pt;height:32.7pt;z-index:251659264;
+ visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+ mso-height-percent:200;mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;
+ mso-wrap-distance-right:9pt;mso-wrap-distance-bottom:0;
+ mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+ mso-position-vertical:absolute;mso-position-vertical-relative:text;
+ mso-width-percent:0;mso-height-percent:200;mso-width-relative:margin;
+ mso-height-relative:margin;v-text-anchor:top' o:gfxdata="UEsDBBQABgAIAAAAIQC2gziS/gAAAOEBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRQU7DMBBF
+90jcwfIWJU67QAgl6YK0S0CoHGBkTxKLZGx5TGhvj5O2G0SRWNoz/78nu9wcxkFMGNg6quQqL6RA
+0s5Y6ir5vt9lD1JwBDIwOMJKHpHlpr69KfdHjyxSmriSfYz+USnWPY7AufNIadK6MEJMx9ApD/oD
+OlTrorhX2lFEilmcO2RdNtjC5xDF9pCuTyYBB5bi6bQ4syoJ3g9WQ0ymaiLzg5KdCXlKLjvcW893
+SUOqXwnz5DrgnHtJTxOsQfEKIT7DmDSUCaxw7Rqn8787ZsmRM9e2VmPeBN4uqYvTtW7jvijg9N/y
+JsXecLq0q+WD6m8AAAD//wMAUEsDBBQABgAIAAAAIQA4/SH/1gAAAJQBAAALAAAAX3JlbHMvLnJl
+bHOkkMFqwzAMhu+DvYPRfXGawxijTi+j0GvpHsDYimMaW0Yy2fr2M4PBMnrbUb/Q94l/f/hMi1qR
+JVI2sOt6UJgd+ZiDgffL8ekFlFSbvV0oo4EbChzGx4f9GRdb25HMsYhqlCwG5lrLq9biZkxWOiqY
+22YiTra2kYMu1l1tQD30/bPm3wwYN0x18gb45AdQl1tp5j/sFB2T0FQ7R0nTNEV3j6o9feQzro1i
+OWA14Fm+Q8a1a8+Bvu/d/dMb2JY5uiPbhG/ktn4cqGU/er3pcvwCAAD//wMAUEsDBBQABgAIAAAA
+IQDZOQiZIgIAAB0EAAAOAAAAZHJzL2Uyb0RvYy54bWysU9uO2yAQfa/Uf0C8N74k6SZWnNU221SV
+thdptx9AMI5RgaFAYqdf3wFns9H2raofLIYZDmfOHFa3g1bkKJyXYGpaTHJKhOHQSLOv6Y+n7bsF
+JT4w0zAFRtT0JDy9Xb99s+ptJUroQDXCEQQxvuptTbsQbJVlnndCMz8BKwwmW3CaBQzdPmsc6xFd
+q6zM8/dZD66xDrjwHnfvxyRdJ/y2FTx8a1svAlE1RW4h/V367+I/W69YtXfMdpKfabB/YKGZNHjp
+BeqeBUYOTv4FpSV34KENEw46g7aVXKQesJsif9XNY8esSL2gON5eZPL/D5Z/PX53RDY1neY3lBim
+cUhPYgjkAwykjPr01ldY9mixMAy4jXNOvXr7APynJwY2HTN7cecc9J1gDfIr4sns6uiI4yPIrv8C
+DV7DDgES0NA6HcVDOQii45xOl9lEKhw3y1lRTMspJRxzxSyfLhfzdAerno9b58MnAZrERU0dDj/B
+s+ODD5EOq55L4m0elGy2UqkURMOJjXLkyNAqu/3YwKsqZUhf0+W8nCdgA/F4spCWAX2spK7pIo/f
+6KyoxkfTpJLApBrXSESZszxRkVGbMOwGLIya7aA5oVAORr/i+8JFB+43JT16tab+14E5QYn6bFDs
+ZTGbRXOnYDa/KTFw15nddYYZjlA1DZSMy01IDyLJYO9wKFuZ5HphcuaKHkwqnt9LNPl1nKpeXvX6
+DwAAAP//AwBQSwMEFAAGAAgAAAAhAMhAIKXgAAAACwEAAA8AAABkcnMvZG93bnJldi54bWxMj0Fv
+gkAQhe9N+h8206S3ugiRAjIY08R48dBae1/ZEYjsLLKr0n/f7ak9Tt6X974pV5PpxY1G11lGmM8i
+EMS11R03CIfPzUsGwnnFWvWWCeGbHKyqx4dSFdre+YNue9+IUMKuUAit90MhpatbMsrN7EAcspMd
+jfLhHBupR3UP5aaXcRSl0qiOw0KrBnprqT7vrwZhk122466RE52i3fbwdcmT97VHfH6a1ksQnib/
+B8OvflCHKjgd7ZW1Ez1C/JrnAUVIk3gOIhDpIk9BHBGyRRKDrEr5/4fqBwAA//8DAFBLAQItABQA
+BgAIAAAAIQC2gziS/gAAAOEBAAATAAAAAAAAAAAAAAAAAAAAAABbQ29udGVudF9UeXBlc10ueG1s
+UEsBAi0AFAAGAAgAAAAhADj9If/WAAAAlAEAAAsAAAAAAAAAAAAAAAAALwEAAF9yZWxzLy5yZWxz
+UEsBAi0AFAAGAAgAAAAhANk5CJkiAgAAHQQAAA4AAAAAAAAAAAAAAAAALgIAAGRycy9lMm9Eb2Mu
+eG1sUEsBAi0AFAAGAAgAAAAhAMhAIKXgAAAACwEAAA8AAAAAAAAAAAAAAAAAfAQAAGRycy9kb3du
+cmV2LnhtbFBLBQYAAAAABAAEAPMAAACJBQAAAAA=
+" fillcolor="white [3212]" stroked="f">
+ <v:textbox style='mso-fit-shape-to-text:t'>
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:251659264;margin-left:187px;margin-top:421px;width:257px;
+height:48px'><img width=257 height=48
+src="Coursear-Practical%20Machine%20Learning%20Course%20Project%20WriteUp_Jason_files/image001.gif"
+v:shapes="Text_x0020_Box_x0020_2"></span><![endif]><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG;mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Picture_x0020_1" o:spid="_x0000_i1026" type="#_x0000_t75"
+ style='width:451.5pt;height:322.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Coursear-Practical%20Machine%20Learning%20Course%20Project%20WriteUp_Jason_files/image002.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=602 height=430
+src="Coursear-Practical%20Machine%20Learning%20Course%20Project%20WriteUp_Jason_files/image003.gif"
+v:shapes="Picture_x0020_1"><![endif]></span><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>classepredict=predict(modFit,testingsubset)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>confusionMatrix(testingsubset$Classe,classepredict)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Confusion Matrix and Statistics<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>          
+</span>Reference<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Prediction<span style='mso-spacerun:yes'>   
+</span>A<span style='mso-spacerun:yes'>    </span>B<span
+style='mso-spacerun:yes'>    </span>C<span style='mso-spacerun:yes'>   
+</span>D<span style='mso-spacerun:yes'>    </span>E<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>          </span>A
+1349<span style='mso-spacerun:yes'>  </span>233<span style='mso-spacerun:yes'> 
+</span>479<span style='mso-spacerun:yes'>  </span>166<span
+style='mso-spacerun:yes'>    </span>5<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>         
+</span>B<span style='mso-spacerun:yes'>  </span>247<span
+style='mso-spacerun:yes'>  </span>864<span style='mso-spacerun:yes'> 
+</span>337<span style='mso-spacerun:yes'>   </span>70<span
+style='mso-spacerun:yes'>    </span>0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>         
+</span>C<span style='mso-spacerun:yes'>   </span>41<span
+style='mso-spacerun:yes'>   </span>55 1078<span style='mso-spacerun:yes'> 
+</span>194<span style='mso-spacerun:yes'>    </span>0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>         
+</span>D<span style='mso-spacerun:yes'>   </span>72<span
+style='mso-spacerun:yes'>  </span>183<span style='mso-spacerun:yes'> 
+</span>679<span style='mso-spacerun:yes'>  </span>352<span
+style='mso-spacerun:yes'>    </span>0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>         
+</span>E<span style='mso-spacerun:yes'>   </span>19<span
+style='mso-spacerun:yes'>  </span>355<span style='mso-spacerun:yes'> 
+</span>360<span style='mso-spacerun:yes'>   </span>68<span
+style='mso-spacerun:yes'>  </span>640<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Overall Statistics<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span
+style='mso-spacerun:yes'>                                           </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>               
+</span>Accuracy : 0.5459<span style='mso-spacerun:yes'>          </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>                 
+</span>95% CI : (0.5348, 0.5569)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>     </span>No
+Information Rate : 0.3738<span style='mso-spacerun:yes'>          </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>    
+</span>P-Value [Acc &gt; NIR] : &lt; 2.2e-16<span
+style='mso-spacerun:yes'>       </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span
+style='mso-spacerun:yes'>                        </span><span
+style='mso-spacerun:yes'>                   </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>                  
+</span>Kappa : 0.4307<span style='mso-spacerun:yes'>          </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>  </span>Mcnemar's
+Test P-Value : &lt; 2.2e-16<span style='mso-spacerun:yes'>       </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Statistics by Class:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span
+style='mso-spacerun:yes'>                      </span>Class: A Class: B Class:
+C Class: D Class: E<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Sensitivity<span
+style='mso-spacerun:yes'>            </span>0.7807<span
+style='mso-spacerun:yes'>   </span>0.5112<span style='mso-spacerun:yes'> 
+</span><span style='mso-spacerun:yes'> </span>0.3675<span
+style='mso-spacerun:yes'>  </span>0.41412<span style='mso-spacerun:yes'> 
+</span>0.99225<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Specificity<span
+style='mso-spacerun:yes'>            </span>0.8557<span
+style='mso-spacerun:yes'>   </span>0.8938<span style='mso-spacerun:yes'>  
+</span>0.9410<span style='mso-spacerun:yes'>  </span>0.86650<span
+style='mso-spacerun:yes'>  </span>0.88863<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Pos Pred Value<span
+style='mso-spacerun:yes'>         </span>0.6044<span
+style='mso-spacerun:yes'>   </span>0.5692<span style='mso-spacerun:yes'>  
+</span>0.7880<span style='mso-spacerun:yes'>  </span>0.27372<span
+style='mso-spacerun:yes'>  </span>0.44383<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Neg Pred Value<span
+style='mso-spacerun:yes'>         </span>0.9325<span
+style='mso-spacerun:yes'>   </span>0.8695<span style='mso-spacerun:yes'>  
+</span>0.7136<span style='mso-spacerun:yes'>  </span>0.92409<span
+style='mso-spacerun:yes'>  </span>0.99922<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Prevalence<span
+style='mso-spacerun:yes'>             </span>0.2202<span
+style='mso-spacerun:yes'>   </span>0.2154<span style='mso-spacerun:yes'>  
+</span>0.3738<span style='mso-spacerun:yes'>  </span>0.10834<span
+style='mso-spacerun:yes'>  </span>0.08221<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Detection Rate<span
+style='mso-spacerun:yes'>         </span>0.1719<span
+style='mso-spacerun:yes'>   </span>0.1101<span style='mso-spacerun:yes'>  
+</span>0.1374<span style='mso-spacerun:yes'>  </span>0.04486<span
+style='mso-spacerun:yes'>  </span>0.08157<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Detection Prevalence<span
+style='mso-spacerun:yes'>   </span>0.2845<span style='mso-spacerun:yes'>  
+</span>0.1935<span style='mso-spacerun:yes'>   </span>0.1744<span
+style='mso-spacerun:yes'>  </span>0.16391<span style='mso-spacerun:yes'> 
+</span>0.18379<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Balanced Accuracy<span
+style='mso-spacerun:yes'>      </span>0.8182<span style='mso-spacerun:yes'>  
+</span>0.7025<span style='mso-spacerun:yes'>   </span>0.6543<span
+style='mso-spacerun:yes'>  </span>0.64031<span style='mso-spacerun:yes'> 
+</span>0.94044<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:EN-SG'>The
+outcomes are not as definitive as one would hope in viewing the plot. In
+testing this model on the testing subset, it is revealed to have a 54.6%
+accuracy, which is only slightly better than chance. The variables used in the
+algorithm include roll_belt, pitch_forearm,
+yaw_belt,magnet_dumbbell_Z,pitch_belt, and magnet_dumbell_x. The model is the
+least accurate for outcome D.<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:18.0pt;mso-add-space:auto;text-indent:-18.0pt;line-height:
+normal;mso-outline-level:2;mso-list:l0 level1 lfo1'><![if !supportLists]><b><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-fareast-language:EN-SG'><span style='mso-list:Ignore'>6)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b><![endif]><b><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-fareast-language:EN-SG'>Random Forest Model<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:EN-SG'>As the
+rpart model was largely inaccurate and the outcome variable appears to have
+more nuances in variable selection as demonstrated in the rpart tree, a random
+forest model was tested to see if that method fit the data more appropriately.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>set.seed(400)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>modFit2 &lt;- train(Classe ~ .,
+method=&quot;rf&quot;,trControl=trainControl(method = &quot;cv&quot;, number =
+4), data=trainingsubset)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Loading required package: randomForest<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## randomForest 4.6-10<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Type rfNews() to see new features/changes/bug
+fixes.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>print(modFit2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Random Forest <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## 11776 samples<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>    </span>52
+predictor<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>     </span>5
+classes: 'A', 'B', 'C', 'D', 'E' <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## No pre-processing<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Resampling: Cross-Validated (4 fold) <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Summary of sample sizes: 8832, 8830, 8833, 8833 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Resampling results across tuning parameters:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>  
+</span>mtry<span style='mso-spacerun:yes'>  </span>Accuracy<span
+style='mso-spacerun:yes'>   </span>Kappa<span style='mso-spacerun:yes'>     
+</span>Accuracy SD<span style='mso-spacerun:yes'>  </span>Kappa SD<span
+style='mso-spacerun:yes'>   </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>    </span>2<span
+style='mso-spacerun:yes'>    </span>0.9869232<span style='mso-spacerun:yes'> 
+</span>0.9834568<span style='mso-spacerun:yes'>  </span>0.004227321<span
+style='mso-spacerun:yes'>  </span>0.005347632<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>   </span>27<span
+style='mso-spacerun:yes'>    </span>0.9879419<span style='mso-spacerun:yes'> 
+</span>0.9847469<span style='mso-spacerun:yes'>  </span>0.005465882<span
+style='mso-spacerun:yes'>  </span>0.006913808<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>   </span>52<span
+style='mso-spacerun:yes'>    </span>0.9830171<span style='mso-spacerun:yes'> 
+</span>0.9785171<span style='mso-spacerun:yes'>  </span>0.004211651<span
+style='mso-spacerun:yes'>  </span>0.005324614<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Accuracy was used to select the optimal model
+using<span style='mso-spacerun:yes'>  </span>the largest value.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## The final value used for the model was mtry =
+27.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>varImp(modFit2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## rf variable importance<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>   </span>only 20
+most important variables shown (out of 52)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span
+style='mso-spacerun:yes'>                      </span>Overall<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## roll_belt<span
+style='mso-spacerun:yes'>             </span>100.00<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## pitch_forearm<span
+style='mso-spacerun:yes'>          </span>57.84<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## yaw_belt<span
+style='mso-spacerun:yes'>               </span>56.46<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## pitch_belt<span
+style='mso-spacerun:yes'>             </span>44.42<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## magnet_dumbbell_z<span
+style='mso-spacerun:yes'>      </span>44.09<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## magnet_dumbbell_y<span
+style='mso-spacerun:yes'>      </span>41.96<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## roll_forearm<span
+style='mso-spacerun:yes'>           </span>38.77<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## accel_dumbbell_y<span
+style='mso-spacerun:yes'>       </span>20.08<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## magnet_dumbbell_x<span
+style='mso-spacerun:yes'>      </span>17.97<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## accel_forearm_x<span
+style='mso-spacerun:yes'>        </span>17.93<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## roll_dumbbell<span
+style='mso-spacerun:yes'>          </span>17.47<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## magnet_belt_z<span
+style='mso-spacerun:yes'>          </span>16.24<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## accel_belt_z<span
+style='mso-spacerun:yes'>           </span>13.62<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## magnet_forearm_z<span
+style='mso-spacerun:yes'>       </span>13.04<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## accel_dumbbell_z<span
+style='mso-spacerun:yes'>       </span>12.84<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## total_accel_dumbbell<span
+style='mso-spacerun:yes'>   </span>12.49<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## magnet_belt_y<span
+style='mso-spacerun:yes'>          </span>11.31<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## yaw_arm<span
+style='mso-spacerun:yes'>                </span>11.23<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## gyros_belt_z<span
+style='mso-spacerun:yes'>           </span>10.71<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## magnet_belt_x<span
+style='mso-spacerun:yes'>          </span>10.63<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>classepredict2=predict(modFit2,testingsubset)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>confusionMatrix(testingsubset$Classe,classepredict2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Confusion Matrix and Statistics<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>          
+</span>Reference<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Prediction<span style='mso-spacerun:yes'>   
+</span>A<span style='mso-spacerun:yes'>    </span>B<span
+style='mso-spacerun:yes'>    </span>C<span style='mso-spacerun:yes'>   
+</span>D<span style='mso-spacerun:yes'>    </span>E<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>          </span>A
+2231<span style='mso-spacerun:yes'>    </span>0<span
+style='mso-spacerun:yes'>    </span>0<span style='mso-spacerun:yes'>   
+</span>0<span style='mso-spacerun:yes'>    </span>1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>         
+</span>B<span style='mso-spacerun:yes'>    </span>8 1500<span
+style='mso-spacerun:yes'>   </span>10<span style='mso-spacerun:yes'>   
+</span>0<span style='mso-spacerun:yes'>    </span>0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>         
+</span>C<span style='mso-spacerun:yes'>    </span>0<span
+style='mso-spacerun:yes'>   </span>15 1349<span style='mso-spacerun:yes'>   
+</span>4<span style='mso-spacerun:yes'>    </span>0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>         
+</span>D<span style='mso-spacerun:yes'>    </span>0<span
+style='mso-spacerun:yes'>    </span>1<span style='mso-spacerun:yes'>  
+</span>17 1268<span style='mso-spacerun:yes'>    </span>0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>         
+</span>E<span style='mso-spacerun:yes'>    </span>0<span
+style='mso-spacerun:yes'>    </span>0<span style='mso-spacerun:yes'>   
+</span>4<span style='mso-spacerun:yes'>   </span><span
+style='mso-spacerun:yes'> </span>1 1437<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Overall Statistics<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span
+style='mso-spacerun:yes'>                                        </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>               
+</span>Accuracy : 0.9922<span style='mso-spacerun:yes'>       </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>                 
+</span>95% CI : (0.99, 0.994)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>     </span>No
+Information Rate : 0.2854<span style='mso-spacerun:yes'>       </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>    
+</span>P-Value [Acc &gt; NIR] : &lt; 2.2e-16<span style='mso-spacerun:yes'>   
+</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span
+style='mso-spacerun:yes'>                                        </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>                  
+</span>Kappa : 0.9902<span style='mso-spacerun:yes'>       </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>  </span>Mcnemar's
+Test P-Value : NA<span style='mso-spacerun:yes'>           </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Statistics by Class:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span
+style='mso-spacerun:yes'>                      </span>Class: A Class: B Class:
+C Class: D Class: E<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Sensitivity<span
+style='mso-spacerun:yes'>            </span>0.9964<span
+style='mso-spacerun:yes'>   </span>0.9894<span style='mso-spacerun:yes'>  
+</span>0.9775<span style='mso-spacerun:yes'>   </span>0.9961<span
+style='mso-spacerun:yes'>   </span>0.9993<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Specificity<span
+style='mso-spacerun:yes'>            </span>0.9998<span
+style='mso-spacerun:yes'>   </span>0.9972<span style='mso-spacerun:yes'>  
+</span>0.9971<span style='mso-spacerun:yes'>   </span>0.9973<span
+style='mso-spacerun:yes'>   </span>0.9992<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Pos Pred Value<span
+style='mso-spacerun:yes'>         </span>0.9996<span
+style='mso-spacerun:yes'>   </span>0.9881<span style='mso-spacerun:yes'>  
+</span>0.9861<span style='mso-spacerun:yes'>   </span>0.9860<span
+style='mso-spacerun:yes'>   </span>0.9965<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Neg Pred Value<span
+style='mso-spacerun:yes'>         </span>0.9986<span
+style='mso-spacerun:yes'>   </span>0.9975<span style='mso-spacerun:yes'>  
+</span>0.9952<span style='mso-spacerun:yes'>   </span>0.9992<span
+style='mso-spacerun:yes'>   </span>0.9998<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Prevalence<span
+style='mso-spacerun:yes'>             </span>0.2854<span
+style='mso-spacerun:yes'>   </span>0.1932<span style='mso-spacerun:yes'>  
+</span>0.1759<span style='mso-spacerun:yes'>   </span>0.1622<span
+style='mso-spacerun:yes'>   </span>0.1833<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Detection Rate<span
+style='mso-spacerun:yes'>         </span>0.2843<span
+style='mso-spacerun:yes'>   </span>0.1912<span style='mso-spacerun:yes'>  
+</span>0.1719<span style='mso-spacerun:yes'>   </span>0.1616<span
+style='mso-spacerun:yes'>   </span>0.1832<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Detection Prevalence<span
+style='mso-spacerun:yes'>   </span>0.2845<span style='mso-spacerun:yes'>  
+</span>0.1935<span style='mso-spacerun:yes'>   </span>0.1744<span
+style='mso-spacerun:yes'>   </span>0.1639<span style='mso-spacerun:yes'>  
+</span>0.1838<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Balanced Accuracy<span
+style='mso-spacerun:yes'>      </span>0.9981<span style='mso-spacerun:yes'>  
+</span>0.9933<span style='mso-spacerun:yes'>   </span>0.9873<span
+style='mso-spacerun:yes'>   </span>0.9967<span style='mso-spacerun:yes'>  
+</span>0.9993<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:EN-SG'>The
+random forest model has a 99.2% accuracy, far superior to the rpart method. The
+specificity and sensitivity is in the high 90s for all variables. The top five
+variables of importance included the roll_belt, yaw_belt,magnet_dumbbell_z,magnet_dumbbell_y,
+and the pitch_forearm. For outcome C, the model is the least
+accurate.Preprocessing was considered, but at the risk of overfitting the model
+was not tested due to the accuracy already being over 99%.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:EN-SG'>Below are
+a few examples of how the data is more intricate than a discrete rpart model
+allow for, as it would require many yes/no statements to find all the different
+variations of each outcome.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>p1&lt;-qplot(roll_belt,yaw_belt,colour=Classe,data=trainingsubset)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>p2&lt;-qplot(roll_belt,pitch_forearm,colour=Classe,data=trainingsubset)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>grid.arrange(p1,p2,ncol=2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:EN-SG;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_2" o:spid="_x0000_i1025"
+ type="#_x0000_t75" style='width:451.5pt;height:322.5pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="Coursear-Practical%20Machine%20Learning%20Course%20Project%20WriteUp_Jason_files/image004.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=602 height=430
+src="Coursear-Practical%20Machine%20Learning%20Course%20Project%20WriteUp_Jason_files/image005.gif"
+v:shapes="Picture_x0020_2"><![endif]></span><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>dev.off()<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## null device <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'><span style='mso-spacerun:yes'>           </span>1<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:18.0pt;mso-add-space:auto;text-indent:-18.0pt;line-height:
+normal;mso-outline-level:2;mso-list:l0 level1 lfo1'><![if !supportLists]><b><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-fareast-language:EN-SG'><span style='mso-list:Ignore'>7)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b><![endif]><b><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-fareast-language:EN-SG'>In Sample &amp; Out of Sample
+Error<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:EN-SG'>The in
+sample error is error rate when the model is used to predict the training set
+it is based off. This error is going to be much less than the model predicting
+another dataset (out of sample error). For the random forest model used as the
+final algorithm, the in sample error rate is 0; the model is 100% accurate.
+This could be a sign of overfitting.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>insamplepredict=predict(modFit2,trainingsubset)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>confusionMatrix(trainingsubset$Classe,insamplepredict)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Confusion Matrix and Statistics<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>          
+</span>Reference<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Prediction<span style='mso-spacerun:yes'>   
+</span>A<span style='mso-spacerun:yes'>    </span>B<span
+style='mso-spacerun:yes'>    </span>C<span style='mso-spacerun:yes'>   
+</span>D<span style='mso-spacerun:yes'>    </span>E<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>          </span>A
+3348<span style='mso-spacerun:yes'>    </span>0<span
+style='mso-spacerun:yes'>    </span>0<span style='mso-spacerun:yes'>   
+</span>0<span style='mso-spacerun:yes'>    </span>0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>         
+</span>B<span style='mso-spacerun:yes'>    </span>0 2279<span
+style='mso-spacerun:yes'>    </span>0<span style='mso-spacerun:yes'>   
+</span>0<span style='mso-spacerun:yes'>    </span>0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>         
+</span>C<span style='mso-spacerun:yes'>    </span>0<span
+style='mso-spacerun:yes'>    </span>0 2054<span style='mso-spacerun:yes'>   
+</span>0<span style='mso-spacerun:yes'>    </span>0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>         
+</span>D<span style='mso-spacerun:yes'>    </span>0<span
+style='mso-spacerun:yes'>    </span>0<span style='mso-spacerun:yes'>   
+</span>0 1930<span style='mso-spacerun:yes'>    </span>0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>         
+</span>E<span style='mso-spacerun:yes'>    </span>0<span
+style='mso-spacerun:yes'>    </span>0<span style='mso-spacerun:yes'>   
+</span>0<span style='mso-spacerun:yes'>    </span>0 2165<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Overall Statistics<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span
+style='mso-spacerun:yes'>                                      </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>               
+</span>Accuracy : 1<span style='mso-spacerun:yes'>          </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>                 
+</span>95% CI : (0.9997, 1)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>     </span>No
+Information Rate : 0.2843<span style='mso-spacerun:yes'>     </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>    
+</span>P-Value [Acc &gt; NIR] : &lt; 2.2e-16<span style='mso-spacerun:yes'> 
+</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span
+style='mso-spacerun:yes'>                                      </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>                  
+</span>Kappa : 1<span style='mso-spacerun:yes'>          </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>  </span>Mcnemar's
+Test P-Value : NA<span style='mso-spacerun:yes'>         </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Statistics by Class:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span
+style='mso-spacerun:yes'>                      </span>Class: A Class: B Class:
+C Class: D Class: E<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Sensitivity<span
+style='mso-spacerun:yes'>            </span>1.0000<span
+style='mso-spacerun:yes'>   </span>1.0000<span style='mso-spacerun:yes'>  
+</span>1.0000<span style='mso-spacerun:yes'>   </span>1.0000<span
+style='mso-spacerun:yes'>   </span>1.0000<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Specificity<span
+style='mso-spacerun:yes'>            </span>1.0000<span
+style='mso-spacerun:yes'>   </span>1.0000<span style='mso-spacerun:yes'>  
+</span>1.0000<span style='mso-spacerun:yes'>   </span>1.0000<span
+style='mso-spacerun:yes'>   </span>1.0000<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Pos Pred Value<span
+style='mso-spacerun:yes'>         </span>1.0000<span
+style='mso-spacerun:yes'>   </span>1.0000<span style='mso-spacerun:yes'>  
+</span>1.0000<span style='mso-spacerun:yes'>   </span>1.0000<span
+style='mso-spacerun:yes'>   </span>1.0000<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Neg Pred Value<span
+style='mso-spacerun:yes'>         </span>1.0000<span
+style='mso-spacerun:yes'>   </span>1.0000<span style='mso-spacerun:yes'>  
+</span>1.0000<span style='mso-spacerun:yes'>   </span>1.0000<span
+style='mso-spacerun:yes'>   </span>1.0000<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Prevalence<span
+style='mso-spacerun:yes'>             </span>0.2843<span
+style='mso-spacerun:yes'>   </span>0.1935<span style='mso-spacerun:yes'>  
+</span>0.1744<span style='mso-spacerun:yes'>   </span>0.1639<span
+style='mso-spacerun:yes'>   </span>0.1838<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Detection Rate<span
+style='mso-spacerun:yes'>         </span>0.2843<span
+style='mso-spacerun:yes'>   </span>0.1935<span style='mso-spacerun:yes'>  
+</span>0.1744<span style='mso-spacerun:yes'>   </span>0.1639<span
+style='mso-spacerun:yes'>   </span>0.1838<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Detection Prevalence<span
+style='mso-spacerun:yes'>   </span>0.2843<span style='mso-spacerun:yes'>  
+</span>0.1935<span style='mso-spacerun:yes'>   </span>0.1744<span
+style='mso-spacerun:yes'>   </span>0.1639<span style='mso-spacerun:yes'>  
+</span>0.1838<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Balanced Accuracy<span
+style='mso-spacerun:yes'>      </span>1.0000<span style='mso-spacerun:yes'>  
+</span>1.0000<span style='mso-spacerun:yes'>   </span>1.0000<span
+style='mso-spacerun:yes'>   </span>1.0000<span style='mso-spacerun:yes'> 
+</span><span style='mso-spacerun:yes'> </span>1.0000<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:EN-SG'>However,
+as shown previously, when the model is used on a separate data set the accuracy
+is still at 99.2%.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>classepredict2=predict(modFit2,testingsubset)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>confusionMatrix(testingsubset$Classe,classepredict2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Confusion Matrix and Statistics<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>          
+</span>Reference<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Prediction<span style='mso-spacerun:yes'>   
+</span>A<span style='mso-spacerun:yes'>    </span>B<span
+style='mso-spacerun:yes'>    </span>C<span style='mso-spacerun:yes'>   
+</span>D<span style='mso-spacerun:yes'>    </span>E<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>          </span>A
+2231<span style='mso-spacerun:yes'>    </span>0<span
+style='mso-spacerun:yes'>    </span>0<span style='mso-spacerun:yes'>   
+</span>0<span style='mso-spacerun:yes'>    </span>1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>         
+</span>B<span style='mso-spacerun:yes'>    </span>8 1500<span
+style='mso-spacerun:yes'>   </span>10<span style='mso-spacerun:yes'>   
+</span>0<span style='mso-spacerun:yes'>    </span>0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>         
+</span>C<span style='mso-spacerun:yes'>    </span>0<span
+style='mso-spacerun:yes'>   </span>15 1349<span style='mso-spacerun:yes'>   
+</span>4<span style='mso-spacerun:yes'>    </span>0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>         
+</span>D<span style='mso-spacerun:yes'>    </span>0<span
+style='mso-spacerun:yes'>    </span>1<span style='mso-spacerun:yes'>  
+</span>17 1268<span style='mso-spacerun:yes'>    </span>0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>         
+</span>E<span style='mso-spacerun:yes'>    </span>0<span
+style='mso-spacerun:yes'>    </span>0<span style='mso-spacerun:yes'>   
+</span>4<span style='mso-spacerun:yes'>    </span>1 1437<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Overall Statistics<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span
+style='mso-spacerun:yes'>                                        </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>               
+</span>Accuracy : 0.9922<span style='mso-spacerun:yes'>       </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>                 
+</span>95% CI : (0.99, 0.994)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>     </span>No
+Information Rate : 0.2854<span style='mso-spacerun:yes'>       </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>    
+</span>P-Value [Acc &gt; NIR] : &lt; 2.2e-16<span style='mso-spacerun:yes'>   
+</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span
+style='mso-spacerun:yes'>                                        </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>                  
+</span>Kappa : 0.9902<span style='mso-spacerun:yes'>       </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>  </span>Mcnemar's
+Test P-Value : NA<span style='mso-spacerun:yes'>           </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Statistics by Class:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span
+style='mso-spacerun:yes'>                      </span>Class: A Class: B Class:
+C Class: D Class: E<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Sensitivity<span
+style='mso-spacerun:yes'>            </span>0.9964<span
+style='mso-spacerun:yes'>   </span>0.9894<span style='mso-spacerun:yes'>  
+</span>0.9775<span style='mso-spacerun:yes'>   </span>0.9961<span
+style='mso-spacerun:yes'>   </span>0.9993<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Specificity<span
+style='mso-spacerun:yes'>            </span>0.9998<span
+style='mso-spacerun:yes'>   </span>0.9972<span style='mso-spacerun:yes'>  
+</span>0.9971<span style='mso-spacerun:yes'>   </span>0.9973<span
+style='mso-spacerun:yes'>   </span>0.9992<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Pos Pred Value<span
+style='mso-spacerun:yes'>         </span>0.9996<span
+style='mso-spacerun:yes'>   </span>0.9881<span style='mso-spacerun:yes'>  
+</span>0.9861<span style='mso-spacerun:yes'>   </span>0.9860<span
+style='mso-spacerun:yes'>   </span>0.9965<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Neg Pred Value<span
+style='mso-spacerun:yes'>         </span>0.9986<span
+style='mso-spacerun:yes'>   </span>0.9975<span style='mso-spacerun:yes'>  
+</span>0.9952<span style='mso-spacerun:yes'>   </span>0.9992<span
+style='mso-spacerun:yes'>   </span>0.9998<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Prevalence<span
+style='mso-spacerun:yes'>             </span>0.2854<span
+style='mso-spacerun:yes'>   </span>0.1932<span style='mso-spacerun:yes'>  
+</span>0.1759<span style='mso-spacerun:yes'>   </span>0.1622<span
+style='mso-spacerun:yes'>   </span>0.1833<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Detection Rate<span
+style='mso-spacerun:yes'>         </span>0.2843<span
+style='mso-spacerun:yes'>   </span>0.1912<span style='mso-spacerun:yes'>  
+</span>0.1719<span style='mso-spacerun:yes'>   </span>0.1616<span
+style='mso-spacerun:yes'>   </span>0.1832<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Detection Prevalence<span
+style='mso-spacerun:yes'>   </span>0.2845<span style='mso-spacerun:yes'>  
+</span>0.1935<span style='mso-spacerun:yes'>   </span>0.1744<span
+style='mso-spacerun:yes'>   </span>0.1639<span style='mso-spacerun:yes'>  
+</span>0.1838<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Balanced Accuracy<span
+style='mso-spacerun:yes'>      </span>0.9981<span style='mso-spacerun:yes'>  
+</span>0.9933<span style='mso-spacerun:yes'>   </span>0.9873<span
+style='mso-spacerun:yes'>   </span>0.9967<span style='mso-spacerun:yes'>  
+</span>0.9993<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:EN-SG'>And when
+used on the original testing data set, the submitted answer resulted in 100%
+“You are correct!” I am hesitant to say this is equivalent to 100% accuracy as
+some problems may have had several solutions marked as correct to account for
+various students’ algorithms.For the purposes of this course, this testing on a
+new set of data gives more credence that the model accounts for the signal and
+not just the noise.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>testinganswers=predict(modFit2, newdata=testing)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>print(testinganswers)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>##<span style='mso-spacerun:yes'>  </span>[1] B A B
+A A E D B A A B C B A E E A B B B<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-SG'>## Levels: A B C D E<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:EN-SG'>It is
+also important to consider that the samples are all taken from one larger
+sample and that if the data were to be collected again during a different time
+period or with different participants the out of sample error could be higher
+and the algorithm may not be as accurate. This is especially true when
+considering that though there are many observations, the data comes for 6
+participants which may not be representative of the population as a whole.<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:18.0pt;mso-add-space:auto;text-indent:-18.0pt;line-height:
+normal;mso-outline-level:2;mso-list:l0 level1 lfo1'><![if !supportLists]><b><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-fareast-language:EN-SG'><span style='mso-list:Ignore'>8)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b><![endif]><b><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-fareast-language:EN-SG'>Conclusion<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:EN-SG'>Random
+Forest was a superior model for prediction of exercise quality compared to
+rpart. The nominal categories were dependent on various variables and the
+interaction between them. The RF model had over 99% accuracy and fitted well to
+other subsamples of the data. However, the algorithm may not have as high of
+accuracy on other samples, particularly ones with different subjects.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:EN-SG'>In the
+first model D was the most difficult to predict and in the second C was the
+most difficult to predict. This makes theoretical sense as Class C is lifting
+the dumbbell only halfway and Class D is lowering the dumbbell only halfway.
+These movements may be hard to distinguish by the data collected and could be a
+topic for future research regarding how to detect this difference-if deemed
+important.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:EN-SG'>Overall,
+it is interesting to consider how monitors are affected by the quality of an
+exercise and are able to predict the error made. This is an important indicator
+for health and fitness as it is not just the quantity of exercise that can be
+collected and analyzed but also the quality.<o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
